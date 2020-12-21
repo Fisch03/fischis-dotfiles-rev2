@@ -55,7 +55,7 @@ screen.connect_signal("request::wallpaper", function(s)
 end)
 
 -- Layout
-require("layout.bartop")
+require("layout")
 
 -- Rules
 require("rules")

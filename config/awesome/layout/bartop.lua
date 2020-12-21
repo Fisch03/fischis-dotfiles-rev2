@@ -7,7 +7,7 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
 
-screen.connect_signal("request::desktop_decoration", function(s)
+local bar_top = function(s)
     -- Each screen has its own tag table.
     awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
 
@@ -83,4 +83,6 @@ screen.connect_signal("request::desktop_decoration", function(s)
             s.mylayoutbox,
         },
     }
-end)
+end
+
+return bar_top
