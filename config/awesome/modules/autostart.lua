@@ -26,6 +26,7 @@ local run_once = function(cmd)
 end
 
 run_once("picom -b --backend glx --experimental-backends")
+run_once("playerctld daemon")
 run_once("discord")
 run_once("spotify")
 
